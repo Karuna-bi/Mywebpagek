@@ -1,0 +1,82 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #a8e6cf, #dcedc1);
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Content section */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.main-image {
+  width: 45%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  flex: 1;
+  max-width: 600px;
+}
+
+.description h2 {
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.description p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+img#hi{
+  max-width: 100%;
+  height: auto
+}

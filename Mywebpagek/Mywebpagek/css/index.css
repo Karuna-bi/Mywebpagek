@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Section */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    padding: 2em;
+    background: #f4f4f4;
+}
+
+/* About Me Section */
+#about-me {
+    background: white;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text and content for mobile */
+}
+
+#about-me h2 {
+    color: #333;
+}
+
+#about-me p {
+    margin-bottom: 1em;
+    text-align: justify; /* Improves readability on wider screens */
+}
+
+/* Hobbies Section */
+#hobbies {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+#hobbies img {
+    width: 30%;
+    max-width: 100%; /* Ensures images don't exceed the container */
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: white;
+}
+
+/* Image Scaling */
+img#ff {
+    height: auto; /* Removes fixed height for responsive scaling */
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 0.5em; /* Reduce spacing between navigation items */
+    }
+
+    header {
+        padding: 1.5em 1em;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    #about-me {
+        padding: 1.5em;
+    }
+
+    #hobbies img {
+        width: 45%; /* Increase image width for better layout */
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+    }
+
+    nav ul li {
+        margin: 0.5em 0; /* Add spacing between stacked navigation items */
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 1em;
+    }
+
+    #about-me {
+        padding: 1em;
+    }
+
+    #hobbies img {
+        width: 100%; /* Make images full width for small screens */
+    }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    #hobbies img {
+        width: 20%; /* Reduce image size for larger displays */
+    }
+}

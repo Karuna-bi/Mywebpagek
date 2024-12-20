@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: green;
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  background-color: #656965;
+  color: lightgreen;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* Adds spacing between hobby cards */
+}
+
+/* Hobby Card Styles */
+.hobby {
+  background-color: #ffffff;
+  border: 7px solid #788278;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hobby:hover {
+  transform: scale(1.05);
+  background-color: #fbf6ea;
+}
+
+.hobby h2 {
+  color: #91af4c;
+  margin: 0 0 10px;
+}
+
+.hobby p {
+  margin: 0;
+  color: #555;
+}
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+      padding: 15px 0;
+  }
+
+  .content {
+      padding: 15px;
+      gap: 15px;
+  }
+
+  .hobby {
+      width: 80%; /* Reduce card width to fit the screen */
+      padding: 15px;
+  }
+
+  .hobby h2 {
+      font-size: 1.2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .hobby p {
+      font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .header {
+      font-size: 1.2rem; /* Reduce header font size for mobile */
+      padding: 10px 0;
+  }
+
+  .content {
+      padding: 10px;
+      gap: 10px;
+  }
+
+  .hobby {
+      width: 90%; /* Maximize card width for small screens */
+      padding: 10px;
+  }
+
+  .hobby h2 {
+      font-size: 1rem; /* Smaller heading for mobile */
+  }
+
+  .hobby p {
+      font-size: 0.9rem; /* Smaller text for mobile */
+  }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .content {
+      gap: 30px; /* Increase spacing between cards */
+  }
+
+  .hobby {
+      width: 350px; /* Larger card size for big screens */
+  }
+
+  .hobby h2 {
+      font-size: 1.5rem; /* Increase heading size */
+  }
+
+  .hobby p {
+      font-size: 1.1rem; /* Slightly larger paragraph text */
+  }
+}
