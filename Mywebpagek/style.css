@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Makes navigation items wrap for smaller screens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+main p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+main ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+/* Image Styling */
+img#aa {
+    height: 400px;
+    max-width: 100%; /* Ensures the image scales within its container */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem; /* Slightly smaller heading */
+    }
+
+    main p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    img#aa {
+        height: auto; /* Removes fixed height for proportional scaling */
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stacks navigation items */
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem; /* Adjust padding for smaller buttons */
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.2rem; /* Smaller heading for mobile */
+    }
+
+    main p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    img#aa {
+        height: auto;
+        width: 100%; /* Make the image full width */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Smaller text for footer */
+    }
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1000px; /* Increase content width */
+    }
+
+    img#aa {
+        height: 500px; /* Larger image for bigger screens */
+    }
+}
